@@ -1,0 +1,20 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 0.25rem;
+  text-align: left;
+  background: #808080; /*Untuk Background Warna Gray diatas tabel*/
+  color: #ffffff; /*Untuk Huruf Warna Putih diatas tabel*/
+  border: 2.5px solid #ccc; /*Untuk Warna garis atas*/
+}
+tbody tr:nth-child(odd) {
+  background: #E6E6FA; /*Untuk Background Warna Lavender*/
+  border: 2px solid #ccc; /*Untuk Warna garis tengah*/
+}
+tbody td {
+  padding: 0.45rem;
+  text-align: left;
+  border: 2.5px solid #ccc; /*Untuk Warna garis bawah*/
+}

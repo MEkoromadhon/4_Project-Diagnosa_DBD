@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> DAFTAR AKUN </title>
+<style>
+/* ---------------------- Program Bagian CSS ----------------------- */
+body {background-color: DodgerBlue;}
+
+/*----------------- Program Bagian Untuk mengatur Table Rowspan -------------------*/ 
+ table, th, td { 
+border: 1px solid none;
+border-collapse: collapse;
+}
+   th, td { 
+ padding: 5px;
+ text-align:left; 
+}
+</style>
+
+</head>
+<body> <br>
+<h1 style = "text-align:center; color:White;"> DAFTAR AKUN </h1>
+
+<!---------------------------- Program Bagian Input ------------------------> 
+<form action="InsertDB.php" method="POST" name="input"> <br>
+  <fieldset style="border-color: white;">
+    <table style="width:30%; margin-left:auto;margin-left:220px;"> <br>
+      <tr>
+        <th style="color: White"> Nama Lengkap </th>
+        <th style="color: White"> : </th> <!--required = validasi input tidak boleh kosong-->
+        <th><input name="Nama Lengkap" type="text" style="width: 300%; height: 19px;" autofocus="Nama Lengkap" required></th>
+      </tr>
+      <tr>
+        <th style="color: White"> Tempat/Tanggal Lahir </th>
+        <th style="color: White"> : </th>
+        <th><input name="Tempat/Tanggal Lahir" type="text" style="width: 300%; height: 19px;" required></th>
+      </tr>
+      <tr>
+        <th style="color: White"> Jenis Kelamin </th>
+        <th style="color: White"> : </th>
+        <th><select list="Jenis Kelamin" name="Jenis_Kelamin" style="width: 80%; height: 28px;">
+              <option value="Laki - Laki"> Laki - Laki </option>
+              <option value="Perempuan"> Perempuan </option>
+            </select>
+      </tr>
+      <tr>
+        <th style="color: White"> Alamat </th>
+        <th style="color: White"> : </th>
+        <th><input name="Alamat" type="text" style="width: 300%; height: 19px;" required ></th>
+      </tr>
+      <tr>
+        <th style="color: White"> No. Handphone </th>
+        <th style="color: White"> : </th>
+        <th><input required name="No_Handphone" type="text" style="width: 80%; height: 19px;" onkeypress="return event.charCode >= 48 && event.charCode <=57" ></th> <!--onkeypress = membuat input hanya boleh diisi angka dan kode char didalam pemograman web, untuk angka adalah 48 – 57, jika kita hitung 48, 49, 50, 51, 52, 53, 54, 55, 56, 57. Itu berjumalah 10. Yaitu 0-9. -->
+      </tr>
+      <tr>
+        <th style="color: White"> Email </th>
+        <th style="color: White"> : </th>
+        <th><input name="Email" type="text" style="width: 300%; height: 19px;" required ></th>
+      </tr>
+      <tr>
+        <th style="color: White"> Password </th>
+        <th style="color: White"> : </th>
+        <th><input name="Password" type="password" style="width: 300%; height: 19px;" required ></th>
+      </tr>
+    </table>
+    <br>
+    <button onclick="return confirm('Apakah data yang anda masukan sudah benar ?');" style="width: 100px; height: 35px; margin-left: 930px; cursor: pointer;" type="Submit" name="input" value="Submit" ><b> Simpan </b></button> <!--type="Submit" name="input" value="Submit : Fungsi untuk input dengan tipe submit-->
+</form>
+  <br><br><br>
+  <th><th><th><input type="reset" name="Reset" style="width: 70px; height: 27px; cursor: pointer;">
+  <hr>
+      <form action="Halaman Tampilan Awal.html" method="POST" name="input" style="text-align: right;">
+           <button style="width: 100px; height: 35px; cursor: pointer;"><b> Kembali </b></button>
+      </form>
+</fieldset>
+<br><br>
+    <p style = "text-align:center;"> @Pemrograman Web 2020 - EASA </p>
+</body>
+</html>

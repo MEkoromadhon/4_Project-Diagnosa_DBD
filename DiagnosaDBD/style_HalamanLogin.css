@@ -1,0 +1,54 @@
+*{
+    margin: 0; /*Fungsinya untuk mengatur tepi garis luar. Berdasarkan posisinya, ada empat jenis margin: margin-top, margin-right, margin-bottom, margin-left;*/
+    padding: 0; /*Padding. Artinya jarak dalam di antara konten dengan bingkai;*/
+    outline: 0; /*Outline.  Berfungsi sebagai garis bingkai form;*/
+    font-family: 'Times New Roman', sans-serif; /*Font-family. Berperan untuk mengatur jenis font sesuai dengan yang Anda inginkan.*/
+}
+body{
+    height: 100vh; /*Height. Fungsinya untuk mengatur ketinggian objek. Height: 100vh berarti tinggi objek sama dengan 100% tinggi layar tab;*/
+    background-size: cover; /*Background-size. Berfungsi untuk mengatur ukuran gambar latar belakang. Ada tiga tipe ukuran yang bisa digunakan: auto, cover, dan contain;*/
+    background-position: center; /*Background-position. Fungsinya menetapkan posisi awal gambar latar belakang. Banyak opsi untuk ini, yaitu: left-top, left-center, left-bottom, right-top, right-center, right-bottom, center-top, center, dan center-bottom;*/
+}
+
+.container{
+    position: absolute; /*Position, untuk mengatur penempatan objek dalam halaman website. Ada lima macam posisi: static, relative, fixed, absolute, dan sticky;*/
+    left: 50%; /*Left, yaitu penempatan objek mulai dari jarak tepi kiri layar;*/
+    top: 50%; /*Top, merupakan penempatan objek mulai dari tepi atas layar;*/
+    transform: translate(-50%,-50%); /*Transform, memungkinkan kita membuat efek rotasi dan animasi pada suatu objek. Terdapat beberapa jenis gaya: translate, scale, skew, rotate, dan matrix;*/
+    padding: 20px 25px; /*Padding, mengatur spasi atau jarak di dalam konten dengan satuan pixel;*/
+    width: 400px; /*Width, mengatur lebar objek dalam satuan pixel;*/
+    height: 300px;
+    background-color: #00CED1; /*Background-color, mendesain pewarnaan pada bagian latar belakang objek;*/
+    box-shadow: 0 0 10px rgba(255,255,255,.5); /*Box-shadow, fungsinya membuat bayangan pada objek.*/
+}
+.container h1{
+    text-align: left; /*Text-align, yaitu untuk memposisikan teks. Ada beberapa posisi yang bisa Anda pilih: right, left, center, dan justify;*/
+    color: #fafafa; /*color, untuk mengatur warna teks.*/
+    margin-bottom: 30px; /*Margin-bottom, memberikan jarak dalam bagian bawah dalam satuan pixel;*/
+    text-transform: uppercase; /*Text-transform, berperan untuk memodifikasi format teks. Ada tiga gaya yang bisa Anda pilih: uppercase, lowercase, dan capitalize;*/
+    border-bottom: 4px solid #2979ff; /*Border-bottom, fungsinya memberikan garis Bawah (bingkai) pada bagian bawah teks. Anda juga bisa memodifikasi warnanya.*/
+}
+.container label{
+    text-align: left; /*Text-align, untuk mengatur posisi teks. Silakan pilih salah satu di antara: left, right, center, atau justify;*/
+    color: #FFFFFF; /*Color, fungsinya mengubah warna teks. (warna putih)*/
+}
+.container form input{ 
+    width: calc(100% - 20px); /*Width, untuk mengatur lebar objek;*/
+    padding: 8px 10px; /*Padding, mengatur jarak dalam objek;*/
+    margin-bottom: 15px; /*Margin-bottom, mengatur jarak objek dari garis tepi bagian bawah;*/
+    border: none; /*Border, fungsinya memberikan bingkai pada objek;*/
+    background-color: transparent; /*Background-color, untuk memodifikasi warna objek supaya transparan;*/
+    border-bottom: 2px solid #2979ff; /*Border-bottom; memberikan bingkai bawah serta modifikasi warnanya;*/
+    color: #0000CD; /*Color, mengatur warna teks pada objek; (Medium Blue)*/
+    font-size: 20px; /*Font-size, mengubah jenis font di dalam objek.*/
+}
+
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+    cursor: pointer; /*Membuat cursor mouse*/
+}

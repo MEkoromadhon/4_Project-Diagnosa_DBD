@@ -1,0 +1,51 @@
+*{
+    margin: 0; /*Fungsinya untuk mengatur tepi garis luar. Berdasarkan posisinya, ada empat jenis margin: margin-top, margin-right, margin-bottom, margin-left;*/
+    padding: 0; /*Padding. Artinya jarak dalam di antara konten dengan bingkai;*/
+    outline: 0; /*Outline.  Berfungsi sebagai garis bingkai form;*/
+    font-family: 'Times New Roman', sans-serif; /*Font-family. Berperan untuk mengatur jenis font sesuai dengan yang Anda inginkan.*/
+}
+body{
+    height: 100vh; /*Height. Fungsinya untuk mengatur ketinggian objek. Height: 100vh berarti tinggi objek sama dengan 100% tinggi layar tab;*/
+    background-size: cover; /*Background-size. Berfungsi untuk mengatur ukuran gambar latar belakang. Ada tiga tipe ukuran yang bisa digunakan: auto, cover, dan contain;*/
+    background-position: center; /*Background-position. Fungsinya menetapkan posisi awal gambar latar belakang. Banyak opsi untuk ini, yaitu: left-top, left-center, left-bottom, right-top, right-center, right-bottom, center-top, center, dan center-bottom;*/
+}
+
+.container{ /*Desain Layout*/
+    position: absolute; /*Position, untuk mengatur penempatan objek dalam halaman website. Ada lima macam posisi: static, relative, fixed, absolute, dan sticky;*/
+    left: 50%; /*Left, yaitu penempatan objek mulai dari jarak tepi kiri layar;*/
+    top: 50%; /*Top, merupakan penempatan objek mulai dari tepi atas layar;*/
+    transform: translate(-50%,-50%); /*Transform, memungkinkan kita membuat efek rotasi dan animasi pada suatu objek. Terdapat beberapa jenis gaya: translate, scale, skew, rotate, dan matrix;*/
+    padding: 20px 25px; /*Padding, mengatur spasi atau jarak di dalam konten dengan satuan pixel;*/
+    width: 700px; /*Width, mengatur lebar objek dalam satuan pixel;*/
+    height: 460px;
+    background-color: #00FA9A; /*Background-color ( Medium Spring Green) = mendesain pewarnaan pada bagian latar belakang objek;*/
+    /*#7FFFD4 (Aquamarine), #008080 (Teal), #3CB371 (Medium Sea Green), #4682B4 (Steel Blue)*/
+    box-shadow: 0 0 70px rgba(255,255,255,.5); /*Box-shadow, fungsinya membuat bayangan pada objek.*/
+    /*border: 5px solid red; /*Agar layout terdapat border (outline)*/
+}
+
+.container form button{ /*Untuk Button*/
+    margin-left: 140px;
+    width: 60%;
+    padding: 20px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+    cursor: pointer; /*Membuat cursor mouse*/
+    box-shadow: 0 0 17px rgb(70, 130, 180); /*Box-shadow, fungsinya membuat bayangan pada objek.*/
+}
+
+.btn { /*Effect Fading Buttons - "Fade out Effect"*/
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.btn:hover {opacity: 0.6} /*Button effect*/
